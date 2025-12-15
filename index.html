@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSE Learning Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">📘 CSE Learning Portal</div>
+  <nav>
+    <span onclick="showHome()">Home</span>
+    <span onclick="showFirstYear()">First Year</span>
+    <span onclick="showSecondYear()">Second Year</span>
+    <span onclick="showContact()">Contact</span>
+  </nav>
+</header>
+
+<main id="content"></main>
+
+<!-- SYLLABUS MODAL -->
+<div id="syllabusModal" class="modal">
+  <div class="modal-box big">
+    <h2 id="syllabusTitle"></h2>
+    <div id="syllabusContent"></div>
+    <button onclick="closeSyllabus()">Close</button>
+  </div>
+</div>
+
+<!-- IMPORTANT TOPICS MODAL -->
+<div id="topicsModal" class="modal">
+  <div class="modal-box big">
+    <h2 id="topicsTitle"></h2>
+
+    <select id="unitSelect" onchange="showTopics()">
+      <option value="">Select Unit</option>
+      <option value="0">Unit 1</option>
+      <option value="1">Unit 2</option>
+      <option value="2">Unit 3</option>
+      <option value="3">Unit 4</option>
+      <option value="4">Unit 5</option>
+    </select>
+
+    <div id="topicsContent"></div>
+    <button onclick="closeTopics()">Close</button>
+  </div>
+</div>
+
+<footer>
+  © 2025 B.Tech CSE Learning Portal
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
